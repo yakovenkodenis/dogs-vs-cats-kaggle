@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+data/train/train
+data/test/test
+data/val/val
