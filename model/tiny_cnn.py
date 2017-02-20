@@ -9,6 +9,7 @@ from keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
 from keras.optimizers import SGD, Adam
 from keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau
 from keras.regularizers import l2
+from keras.utils.visualize_util import plot
 
 from data.preprocessing import get_list_of_images
 
@@ -79,6 +80,9 @@ class TinyCNN(object):
             predictions.append(prediction[0, 0])
 
         return predictions
+
+    def plot_model(self, file_name):
+        plot(self.model, to_file=file_name)
 
     def _init_model(self):
         model = Sequential()
