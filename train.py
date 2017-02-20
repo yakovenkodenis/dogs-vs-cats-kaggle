@@ -1,7 +1,7 @@
-from model.vgg19 import VGG19
+from model.tiny_cnn import TinyCNN
 
 
-vgg19 = VGG19(train_folder='data/train/train', validation_folder='data/val/val')
+tinyCNN = TinyCNN(train_folder='data/train/train', validation_folder='data/val/val')
 
-vgg19.fit(nb_epoch=1)
+tinyCNN.fit(nb_epoch=2048, batch_size=32)
 

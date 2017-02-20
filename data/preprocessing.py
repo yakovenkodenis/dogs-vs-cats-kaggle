@@ -49,3 +49,7 @@ def create_validation_set(images_folder='./train/train', size=0.2):
 
     for image_path in val_set:
         rename(join(images_folder, image_path), join('./val/val', image_path))
+
+
+# def grayscale_images(images_folder='./train/train'):
+    

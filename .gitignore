@@ -91,3 +91,4 @@ ENV/
 data/train/train
 data/test/test
 data/val/val
+data/test/test_folder
